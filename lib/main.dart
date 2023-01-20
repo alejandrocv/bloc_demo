@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Bloc Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: BlocProvider(
         create: (context) => CounterBloc(),
-        child: const MyHomePage(title: 'Demo Bloc'),
+        child: const MyHomePage(title: 'Bloc Demo'),
       ),
     );
   }
