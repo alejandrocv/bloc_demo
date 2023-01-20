@@ -3,7 +3,6 @@ part of 'counter_bloc.dart';
 abstract class CounterState {
   final int num = 0;
 
-  @override
   List<Object?> get props => [];
 }
 
