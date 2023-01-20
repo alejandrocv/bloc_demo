@@ -11,7 +11,7 @@ class CounterBloc extends Bloc<CountEvent, CounterState> {
     on<Increment>((event, emit) async {
       try {
         emit(Counting());
-        await Future.delayed(const Duration(seconds: 2));
+        await Future.delayed(const Duration(seconds: 1));
         emit(Counted(num: ++num));
       } catch (e) {
         emit(CountError(error: e.toString()));
