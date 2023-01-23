@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                 Text(
                   (state is InitCount || state is Counted)
                       ? '${state.num}'
-                      : "Counting...",
+                      : (state is Counting ? "Counting..." : "Error"),
                   style: Theme.of(context).textTheme.headline4,
                 ),
               ],
